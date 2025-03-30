@@ -1,0 +1,61 @@
+# B站登录测试数据
+- name: "B站登录成功测试"
+  description: "使用正确的用户名和密码登录B站"
+  session: "bilibili_session"  # 保存登录会话
+  steps:
+    - name: "打开B站首页"
+      type: "ui"
+      action: "navigate"
+      params:
+        url: "https://www.bilibili.com"
+        
+    - name: "点击登录按钮"
+      type: "ui"
+      action: "click"
+      params:
+        selector: "text=登录"
+        
+    - name: "切换到密码登录"
+      type: "ui"
+      action: "click"
+      params:
+        selector: "text=密码登录"
+        
+    - name: "输入用户名"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "input[placeholder='请输入账号']"
+        text: "x"
+        
+    - name: "输入密码"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "input[placeholder='请输入密码']"
+        text: "x"
+        
+    - name: "点击登录按钮"
+      type: "ui"
+      action: "click"
+      params:
+        selector: "button:has-text('登录')"
+        
+    - name: "等待登录完成"
+      type: "ui"
+      action: "wait_for_load_state"
+      params:
+        state: "networkidle"
+        
+    - name: "验证登录成功"
+      type: "ui"
+      action: "verify_text"
+      params:
+        selector: ".header-entry-mini"
+        text: "我的"
+        
+#    - name: "保存会话"
+#      type: "ui"
+#      action: "save_session"
+#      params:
+#        session_name: "bilibili_session"

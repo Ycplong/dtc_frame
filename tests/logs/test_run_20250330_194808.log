@@ -1,0 +1,10 @@
+2025-03-30 19:48:08,767 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 19:48:08,767 - test_framework.engine.runner - INFO - 初始化测试环境
+2025-03-30 19:48:11,344 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 19:48:13,336 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 19:48:13,661 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 19:48:13,745 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 19:48:13,829 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 19:48:44,053 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 19:48:44,069 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+2025-03-30 19:49:14,345 - test_framework.engine.runner - INFO - 执行步骤: 保存会话

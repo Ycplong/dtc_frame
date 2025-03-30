@@ -1,0 +1,72 @@
+# 登录测试数据
+- name: "登录成功测试"
+  description: "使用正确的用户名和密码登录"
+  steps:
+    - name: "打开登录页面"
+      type: "ui"
+      action: "navigate"
+      params:
+        url: "http://example.com/login"
+        
+    - name: "输入用户名"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "#username"
+        text: "test_user"
+        
+    - name: "输入密码"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "#password"
+        text: "test_password"
+        
+    - name: "点击登录按钮"
+      type: "ui"
+      action: "click"
+      params:
+        selector: "#login-button"
+        
+    - name: "验证登录成功"
+      type: "ui"
+      action: "verify_text"
+      params:
+        selector: ".welcome-message"
+        text: "欢迎回来"
+
+- name: "登录失败测试"
+  description: "使用错误的密码登录"
+  steps:
+    - name: "打开登录页面"
+      type: "ui"
+      action: "navigate"
+      params:
+        url: "http://example.com/login"
+        
+    - name: "输入用户名"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "#username"
+        text: "test_user"
+        
+    - name: "输入错误密码"
+      type: "ui"
+      action: "input_text"
+      params:
+        selector: "#password"
+        text: "wrong_password"
+        
+    - name: "点击登录按钮"
+      type: "ui"
+      action: "click"
+      params:
+        selector: "#login-button"
+        
+    - name: "验证错误提示"
+      type: "ui"
+      action: "verify_text"
+      params:
+        selector: ".error-message"
+        text: "密码错误" 

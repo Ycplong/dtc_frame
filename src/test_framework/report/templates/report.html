@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试报告</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        .summary {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .summary-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .total {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        .passed {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        .failed {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .test-case {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            border: 1px solid #eee;
+        }
+        .test-case.passed {
+            border-left: 4px solid #2e7d32;
+        }
+        .test-case.failed {
+            border-left: 4px solid #c62828;
+        }
+        .test-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .test-steps {
+            margin-left: 20px;
+        }
+        .step {
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .step.passed {
+            background-color: #e8f5e9;
+        }
+        .step.failed {
+            background-color: #ffebee;
+        }
+        .error-message {
+            color: #c62828;
+            background-color: #ffebee;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .timestamp {
+            text-align: right;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>测试报告</h1>
+            <p>测试执行时间: {{ datetime.now().strftime('%Y-%m-%d %H:%M:%S') }}</p>
+        </div>
+        
+        <div class="summary">
+            <div class="summary-item total">
+                <h2>总用例数</h2>
+                <p>{{ total }}</p>
+            </div>
+            <div class="summary-item passed">
+                <h2>通过用例</h2>
+                <p>{{ passed }}</p>
+            </div>
+            <div class="summary-item failed">
+                <h2>失败用例</h2>
+                <p>{{ failed }}</p>
+            </div>
+        </div>
+        
+        <div class="test-cases">
+            {% for result in results %}
+            <div class="test-case {{ result.status }}">
+                <div class="test-name">{{ result.name }}</div>
+                <div class="test-steps">
+                    {% for step in result.steps %}
+                    <div class="step {{ result.status }}">
+                        {{ step.name }}
+                    </div>
+                    {% endfor %}
+                    {% if result.error %}
+                    <div class="error-message">
+                        <strong>错误信息:</strong><br>
+                        {{ result.error }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="timestamp">
+            报告生成时间: {{ datetime.now().strftime('%Y-%m-%d %H:%M:%S') }}
+        </div>
+    </div>
+</body>
+</html> 

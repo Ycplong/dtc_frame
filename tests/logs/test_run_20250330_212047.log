@@ -1,0 +1,19 @@
+2025-03-30 21:20:47,092 - test_framework.data.parser - INFO - 成功加载测试数据: C:\Users\Administrator\Desktop\AI\测试框架设计\test_data\bilibili_login.yaml
+2025-03-30 21:20:47,094 - test_framework.engine.runner - INFO - 开始执行测试用例: B站登录成功测试
+2025-03-30 21:20:47,094 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 21:20:47,094 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 21:20:47,094 - test_framework.engine.runner - INFO - 初始化测试环境
+2025-03-30 21:20:49,494 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:20:49,496 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:20:51,671 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 21:20:51,672 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 21:20:51,967 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 21:20:51,967 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 21:20:52,063 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 21:20:52,063 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 21:20:52,144 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:20:52,145 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:21:22,372 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 21:21:22,372 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 21:21:22,386 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+2025-03-30 21:21:22,387 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功

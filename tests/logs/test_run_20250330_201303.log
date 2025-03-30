@@ -1,0 +1,20 @@
+2025-03-30 20:13:03,644 - test_framework.engine.runner - INFO - 开始执行测试用例: B站登录成功测试
+2025-03-30 20:13:03,644 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 20:13:03,644 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 20:13:03,645 - test_framework.engine.runner - INFO - 初始化测试环境
+2025-03-30 20:13:05,966 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 20:13:05,966 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 20:13:07,325 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 20:13:07,325 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 20:13:07,620 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 20:13:07,620 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 20:13:07,699 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 20:13:07,701 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 20:13:07,784 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 20:13:07,784 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 20:13:37,997 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 20:13:37,997 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 20:13:38,016 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+2025-03-30 20:13:38,017 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+2025-03-30 20:14:08,241 - test_framework.engine.runner - INFO - 测试结果已保存: test_results\B站登录成功测试_20250330_201408.json
+2025-03-30 20:14:08,241 - test_framework.engine.runner - INFO - 清理测试环境

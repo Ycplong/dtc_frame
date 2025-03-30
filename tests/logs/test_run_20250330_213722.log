@@ -1,0 +1,24 @@
+2025-03-30 21:37:22,866 - test_framework.data.parser - INFO - 成功加载测试数据: C:\Users\Administrator\Desktop\AI\测试框架设计\test_data\bilibili_login.yaml
+2025-03-30 21:37:22,869 - test_framework.engine.runner - INFO - 开始执行测试用例: B站登录成功测试
+2025-03-30 21:37:22,869 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 21:37:22,869 - test_framework.engine.runner - INFO - 执行步骤: 打开B站首页
+2025-03-30 21:37:22,869 - test_framework.engine.runner - INFO - 初始化测试环境
+2025-03-30 21:37:30,280 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:37:30,281 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:37:31,570 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 21:37:31,570 - test_framework.engine.runner - INFO - 执行步骤: 切换到密码登录
+2025-03-30 21:37:33,634 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 21:37:33,634 - test_framework.engine.runner - INFO - 执行步骤: 输入用户名
+2025-03-30 21:37:33,734 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 21:37:33,735 - test_framework.engine.runner - INFO - 执行步骤: 输入密码
+2025-03-30 21:37:33,840 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+2025-03-30 21:37:33,840 - test_framework.engine.runner - INFO - 执行步骤: 点击登录按钮
+[ WARN:0@41.547] global loadsave.cpp:248 cv::findDecoder imread_('button:has-text('登录')'): can't open/read file: check file path/integrity
+2025-03-30 21:38:04,086 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 21:38:04,087 - test_framework.engine.runner - INFO - 执行步骤: 等待登录完成
+2025-03-30 21:38:04,102 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+2025-03-30 21:38:04,102 - test_framework.engine.runner - INFO - 执行步骤: 验证登录成功
+[ WARN:0@71.778] global loadsave.cpp:248 cv::findDecoder imread_('.header-entry-mini'): can't open/read file: check file path/integrity
+2025-03-30 21:38:34,329 - test_framework.engine.runner - INFO - 清理测试环境
+2025-03-30 21:38:34,724 - test_framework.report.generator - ERROR - 生成Allure报告失败: Object of type datetime is not JSON serializable
+2025-03-30 21:38:34,724 - test_framework.engine.runner - ERROR - 生成测试报告失败: Object of type datetime is not JSON serializable
